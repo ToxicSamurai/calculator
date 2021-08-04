@@ -1,8 +1,8 @@
 //ToxicSamurai
 //You may use/edit my code
 
-int p, q;
 //Number variables
+int p1, p2, q, output;
 
 //Initialization
 public void setup(){
@@ -10,6 +10,143 @@ public void setup(){
   stroke(0);
   strokeWeight(10);
   textSize(40);
+}
+
+//Clears the display is you press a key (debug/reset)
+void keyPressed(){
+  p1 = 0;
+  p2 = 0;
+  output = p1;
+}
+
+//Detects button presses and controls the p variable set
+void mousePressed(){
+  //Detect 1
+  if(mouseX >= width/3 && mouseX <= width/3 + 80){
+    if(mouseY >= height/3 + 221 && mouseY <= height/3 + 320){
+      if(p1 != 0){
+        p2 = 1;
+        p1 = p1 * 10 + p2;
+        output = p1;
+      }
+      if(p1 == 0){
+        p1 = 1;
+        output = p1;
+      }
+    }
+  }
+  //Detect 2
+  if(mouseX >= width/3 + 81 && mouseX <= width/3 + 160){
+    if(mouseY >= height/3 + 221 && mouseY <= height/3 + 320){
+      if(p1 != 0){
+        p2 = 2;
+        p1 = p1 * 10 + p2;
+        output = p1;
+      }
+      if(p1 == 0){
+        p1 = 2;
+        output = p1;
+      }
+    }
+  }
+  //Detect 3
+  if(mouseX >= width/3 + 161 && mouseX <= width/3 + 240){
+    if(mouseY >= height/3 + 221 && mouseY <= height/3 + 320){
+      if(p1 == 0){
+        p1 = 3;
+        output = p1;
+      }
+      if(p1 != 0){
+        p2 = 3;
+        p1 = p1 * 10 + p2;
+        output = p1;
+      }
+    }
+  }
+  //Detect 4
+  if(mouseX >= width/3 && mouseX <= width/3 + 80){
+    if(mouseY >= height/3 + 121 && mouseY <= height/3 + 220){
+      if(p1 == 0){
+        p1 = 4;
+        output = p1;
+      }
+      if(p1 != 0){
+        p2 = 4;
+        p1 = p1 * 10 + p2;
+        output = p1;
+      }
+    }
+  }
+  //Detect 5
+  if(mouseX >= width/3 + 81 && mouseX <= width/3 + 160){
+    if(mouseY >= height/3 + 121 && mouseY <= height/3 + 220){
+      if(p1 == 0){
+        p1 = 5;
+        output = p1;
+      }
+      if(p1 != 0){
+        p2 = 5;
+        p1 = p1 * 10 + p2;
+        output = p1;
+      }
+    }
+  }
+  //Detect 6
+  if(mouseX >= width/3 + 161 && mouseX <= width/3 + 240){
+    if(mouseY >= height/3 + 121 && mouseY <= height/3 + 220){
+      if(p1 == 0){
+        p1 = 6;
+        output = p1;
+      }
+      if(p1 != 0){
+        p2 = 6;
+        p1 = p1 * 10 + p2;
+        output = p1;
+      }
+    }
+  }
+  //Detect 7
+  if(mouseX >= width/3 && mouseX <= width/3 + 80){
+    if(mouseY >= height/3 + 20 && mouseY <= height/3 + 120){
+      if(p1 == 0){
+        p1 = 7;
+        output = p1;
+      }
+      if(p1 != 0){
+        p2 = 7;
+        p1 = p1 * 10 + p2;
+        output = p1;
+      }
+    }
+  }
+  //Detect 8
+  if(mouseX >= width/3 + 81 && mouseX <= width/3 + 160){
+    if(mouseY >= height/3 + 20 && mouseY <= height/3 + 120){
+      if(p1 == 0){
+        p1 = 8;
+        output = p1;
+      }
+      if(p1 != 0){
+        p2 = 8;
+        p1 = p1 * 10 + p2;
+        output = p1;
+      }
+    }
+  }
+  //Detect 9
+  if(mouseX >= width/3 + 161 && mouseX <= width/3 + 240){
+    if(mouseY >= height/3 + 20 && mouseY <= height/3 + 120){
+      if(p1 == 0){
+        p1 = 9;
+        output = p1;
+      }
+      if(p1 != 0){
+        p2 = 9;
+        p1 = p1 * 10 + p2;
+        output = p1;
+      }
+    }
+  }
 }
 
 public void draw(){
@@ -70,6 +207,7 @@ void buttonPress(){
   
 }
 
+//Displays the number output variable
 void display(){
-  text(q, 610, 315);
+  text(output, 610, 315);
 }
