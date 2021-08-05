@@ -389,7 +389,7 @@ void mousePressed() {
 
   //Clears the display is you press a key (debug/reset)
   //rect(width/10, height-200, 200, 100);
-  if (mouseX >= width/10 && mouseX <= width/100 + 200) {
+  if (mouseX >= width/10 && mouseX <= width/10 + 200) {
     if (mouseY >= height - 200 && mouseY <= height - 100) {
       p1 = 0;
       p2 = 0;
