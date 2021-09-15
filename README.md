@@ -1,1 +1,1 @@
-"# calculator" 
+A mostly finished calculator I'm creating/I've created in Processing 3.5.4. It currently has working addition/subtraction/multiplication/division with 3 decimal places and numbers funky past 100 million. I'd love to add more but I really don't wanna make more buttons because that's annoying and tedious.
