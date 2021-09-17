@@ -1,5 +1,5 @@
 //ToxicSamurai
-//You may use/edit my code
+//Licensed under Creative Commons CC-BY-NC-SA
 
 //Number variables
 float p1, p2, q1, q2, output;
